@@ -1,0 +1,94 @@
+/*
+Theme Name: TwentyTwenty Child
+Template: twentytwenty
+*/
+
+li, ul {
+	list-style: none;
+}
+
+
+/* ESTRUTURA DA HOME  */
+
+.home-content {
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-gap: 20px;
+}
+
+@media ( max-width: 900px ) {
+	.home-content {
+		margin-top: 20px;
+		display: flex;
+		/*grid-template-columns: 3fr 1fr;
+		grid-gap: 20px;*/
+		flex-wrap: wrap;
+	}
+
+	.home-content > div.box-content {
+		flex: 1 1 800px;
+		margin: 10px;
+	}
+
+	.home-content > div.box-side {
+		flex: 1 1 400px;
+		margin: 10px;
+	}
+
+}
+
+
+
+/*LISTA DE POST DA HOME*/
+
+.home-list {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 20px;
+}
+
+@media ( max-width: 700px ){
+	.home-list {
+	margin-bottom: 20px auto;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 700px;
+	}
+
+	.home-list > div {
+		flex: 1 1 300px;
+		margin: 10px;
+	}
+
+	.grid-thumb img {
+		max-width: 100%;
+		display: block;
+	}
+
+}
+
+.grid-title {
+	vertical-align: text-top;
+}
+
+@media ( min-width: 700px ) {
+	h3, .grid-title-h3 {
+		font-size: = 3rem;
+		margin-top: 0px;
+	}
+}
+
+h3 a {
+	color: #000000;
+	text-decoration: none;
+}
+
+h3 a:hover {
+	text-decoration: underline;
+}
+
+
+/*SIDEBAR*/
+
