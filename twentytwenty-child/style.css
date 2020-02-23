@@ -14,7 +14,7 @@ li, ul {
 	margin-top: 10px;
 	display: grid;
 	grid-template-columns: 3fr 1fr;
-	grid-gap: 20px;
+	grid-gap: 30px;
 }
 
 @media ( max-width: 900px ) {
@@ -82,11 +82,13 @@ li, ul {
 .box-side h3, .grid-title h3 {
 	font-size: 2.8rem;
 	margin: 5px 0px;
+	/*line-height: 1.2;*/
 }
 
 .grid-resumo > p {
 	margin:0px 0px 5px 0px;
 	color: #555555;
+	/*line-height: 1.2;*/
 }
 
 .entry-categories-home {
@@ -125,6 +127,11 @@ h3 a:hover {
 }
 
 /*SIDEBAR*/
+
+.box-side > div {
+	padding: 10px 20px;
+	background-color: #fff;
+}
 
 .box-side ul {
 	margin: 0px;
