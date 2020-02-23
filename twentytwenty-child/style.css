@@ -42,16 +42,22 @@ li, ul {
 
 /*LISTA DE POST DA HOME*/
 
+.box-content {
+	margin-top: 5px;
+}
+
+.box-content > hr {
+	margin: 15px 0px;
+}
+
 .home-list {
-	margin-top: 20px;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-gap: 20px;
 }
 
 @media ( max-width: 700px ){
-	.home-list {
-	margin-bottom: 20px auto;
+	.home-list {	
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 700px;
@@ -73,11 +79,30 @@ li, ul {
 	vertical-align: text-top;
 }
 
-@media ( min-width: 700px ) {
-	h3, .grid-title-h3 {
-		font-size: = 3rem;
-		margin-top: 0px;
-	}
+.box-side h3, .grid-title h3 {
+	font-size: 2.8rem;
+	margin: 5px 0px;
+}
+
+.grid-resumo > p {
+	margin:0px 0px 5px 0px;
+	color: #555555;
+}
+
+.entry-categories-home {
+	margin:0px;
+}
+
+.entry-categories-inner-home {
+	justify-content: left;
+	margin:0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.entry-categories-inner-home a {
+	margin:0px;
 }
 
 h3 a {
@@ -89,6 +114,27 @@ h3 a:hover {
 	text-decoration: underline;
 }
 
+.autor-data {
+	font-size: 1.2rem;
+	color: #999999;
+	margin: 0px;
+}
+
+.autor-data a {
+	text-decoration: none;
+}
 
 /*SIDEBAR*/
 
+.box-side ul {
+	margin: 0px;
+	font-size: 1.5rem;
+}
+
+.box-side ul li a {
+	text-decoration: none;
+}
+
+.box-side ul li a:hover {
+	text-decoration: underline;
+}

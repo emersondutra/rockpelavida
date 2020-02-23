@@ -41,7 +41,8 @@ get_header();
 		<?php 
 
 		if ( have_posts() ) {
-		
+			
+			$i = 0;
 
 			while ( have_posts() ) {
 				
@@ -49,12 +50,15 @@ get_header();
 
 				if ( ! in_category(477) ) {
 
+					if ( $i > 0 ) { echo "<hr/>"; }
+
 					get_template_part( 'content-lista' );
 
+					$i++;
 				}
 			}
 		}
-
+		
 		?>
 
 		</div>

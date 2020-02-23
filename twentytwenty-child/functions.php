@@ -14,9 +14,9 @@ function my_sidebar() {
       'name' => __( 'Sidebar', 'twentytwenty'),
       'id' => 'my_sidebar',
       'description' => __( 'Widgets here will appear in your sidebar', 'twentytwenty' ),
-      'before_widget' => '<div class="widget-content">',
+      'before_widget' => '<div>',
       'after_widget' => "</div>",
-      'before_title' => '<h3 class="widget-title">',
+      'before_title' => '<h3>',
       'after_title' => '</h3>',
   )
  );
